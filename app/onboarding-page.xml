@@ -1,0 +1,22 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="page-background" actionBarHidden="true">
+    <GridLayout rows="*, auto, auto" columns="*" class="p-4">
+        <!-- Content -->
+        <StackLayout row="0" verticalAlignment="center">
+            <Label text="{{ currentIcon }}" class="text-8xl text-center text-white mb-4" textWrap="true" />
+            <Label text="{{ currentTitle }}" class="text-3xl text-center text-white mb-2" textWrap="true" />
+            <Label text="{{ currentDescription }}" class="text-lg text-center text-white" textWrap="true" />
+        </StackLayout>
+
+        <!-- Navigation Dots -->
+        <StackLayout row="1" orientation="horizontal" horizontalAlignment="center" class="m-4">
+            <Repeater items="{{ steps }}">
+                <Repeater.itemTemplate>
+                    <Label text="&#xf111;" class="fa text-sm mr-2" color="{{ $parent.currentStep === $index ? '#FFFFFF' : '#FFFFFF80' }}" />
+                </Repeater.itemTemplate>
+            </Repeater>
+        </StackLayout>
+
+        <!-- Button -->
+        <Button row="2" text="{{ buttonText }}" tap="{{ onButtonTap }}" class="-primary -rounded-lg p-4 m-4" />
+    </GridLayout>
+</Page>

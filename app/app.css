@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page-background {
+  background: linear-gradient(to bottom right, #4B0082, #800080);
+}
+
+.logo {
+  width: 120;
+  height: 120;
+  background-color: white;
+  border-radius: 60;
+}
+
+.icon {
+  font-size: 60;
+  color: #4B0082;
+}
+
+.title {
+  color: white;
+  font-size: 32;
+  font-weight: bold;
+  margin-top: 20;
+}
+
+.subtitle {
+  color: #E0E0E0;
+  font-size: 18;
+  margin-top: 10;
+}
+
+.progress-bar {
+  height: 4;
+  background-color: #FFA500;
+}
+
+Button.-primary {
+  background-color: #FFA500;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 18;
+}
+
+Button.-primary:highlighted {
+  background-color: #FF8C00;
+}

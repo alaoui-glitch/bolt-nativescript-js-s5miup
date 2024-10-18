@@ -1,0 +1,23 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="page-background" actionBarHidden="true">
+    <GridLayout rows="*, auto, *" columns="*" class="p-4">
+        <!-- Logo -->
+        <StackLayout row="0" horizontalAlignment="center" verticalAlignment="center">
+            <GridLayout class="logo" id="logo">
+                <Label text="&#xf06e;" class="icon fa" textAlignment="center" verticalAlignment="center" id="logoIcon"/>
+            </GridLayout>
+        </StackLayout>
+
+        <!-- Title and Subtitle -->
+        <StackLayout row="1" horizontalAlignment="center" opacity="0" id="titleContainer">
+            <Label text="Image Guesser" class="title text-center"/>
+            <Label text="Guess. Reveal. Win!" class="subtitle text-center"/>
+        </StackLayout>
+
+        <!-- Progress Bar -->
+        <GridLayout row="2" verticalAlignment="bottom">
+            <StackLayout id="progressBarContainer" opacity="0">
+                <StackLayout class="progress-bar" id="progressBar" width="0"/>
+            </StackLayout>
+        </GridLayout>
+    </GridLayout>
+</Page>
